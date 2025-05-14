@@ -1,0 +1,26 @@
+.card img{
+    width: 200px;
+    height: 200px;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+  .owl-carousel .item {
+    text-align: center;
+    padding: 20px;
+  }
+  .owl-carousel img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  .item p{
+    background-color: #113448;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 15px;
+  }
+  

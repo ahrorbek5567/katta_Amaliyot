@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Guliston Quruq mevalar</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container p-2">
+      <a class="navbar-brand" href="#">Guliston dehqon bozori</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Asosiy</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Mahsulotlar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mevalar.html">Mevalar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="sabzavot.html">Sabzavotlar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="index.html">Quruq mevalar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="go'sht.html">Go‘sht</a></li>
+              <li><a target="_blank" class="dropdown-item" href="sut.html">Sut</a></li>
+              <li><a target="_blank" class="dropdown-item" href="#">Kanstovar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Tashkilot haqida
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tashkilot_haqida.html">Biz haqimizda</a></li>
+              <li><a class="dropdown-item" href="#">Jamoa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Xizmatlar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Yetkazib berish</a></li>
+              <li><a class="dropdown-item" href="#">Qo‘shimcha xizmatlar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="boglanish.html">Bog‘lanish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br><br><br>
+  <div class="text-light bg-success p-3 text-center container">
+   <h2> Quruq mevalar</h2>
+  </div>
+  <div class="container mt-4">
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <a class="text-decoration-none fw-bold" data-bs-toggle="collapse" href="#malumotlar" role="button" aria-expanded="false" aria-controls="malumotlar">
+        Qisqacha ma'lumot
+      </a>
+      <div class="d-flex">
+        <input type="text" class="form-control form-control-sm me-2" placeholder="Mahsulot nomi">
+        <button class="btn btn-outline-success btn-sm">Izlash</button>
+      </div>
+    </div>
+    <div class="collapse" id="malumotlar">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Quruq mevada yangi uzilgan mevaning barcha foydali xususiyatlari saqlanib qoladi. Shu tariqa, bizda foydali moddalardan nafaqat yozda, balki qishda ham bahramand bo‘lish imkoni bor.</li>
+        <li class="list-group-item">O‘rik turshagi kaliyning tengsiz manbaidir; yurakka yaxshi ta’sir qiladi va onkologik kasalliklar profilaktikasi uchun ajoyib vosita hisoblanadi.</li>
+        <li class="list-group-item">Mayiz - yaxshigina antidepressantdir, shuningdek, qalqonsimon bez kasalliklarida yordam beradi.</li>
+        <li class="list-group-item">Xurmo qoqi - B5, E, H kabi vitaminlarga juda boy bo‘lgan holda, immun tizimini mustahkamlaydi hamda qishni faol va xushchaqchaq tarzda o‘tkazishda yordam beradi.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<br>
+   <div class="container">
+    <div class="owl-carousel owl-theme p-3">
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/bodom.png" alt="Rasm 1">
+        <p>Bodom (kg)</p>
+        <div>
+          <strong class="text-start">35 000-100 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">299 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/mayiz.jpg" alt="Rasm 2">
+        <p> Mayiz (kg)</p>
+        <div>
+          <strong class="text-start">20 000–85 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">346 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/orik qoqi.jpg" alt="Rasm 3">
+        <p>O'rik qoqi (kg)</p>
+        <div>
+          <strong class="text-start">10 000–40 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">354 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/shordanak.jpg" alt="Rasm 4">
+        <p> Sho‘rdanak (kg)</p>
+        <div>
+          <strong class="text-start">25 000–40 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">356 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/yeryongoq.jpg" alt="Rasm 5">
+        <p>Yeryong‘oq (kg)</p>
+        <div>
+          <strong class="text-start">20 000–22 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">166 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/yeryongoq chaqilgani.jpg" alt="Rasm 6">
+        <p>Yeryong‘oq (kg)</p>
+        <div>
+          <strong class="text-start">15 000–17 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">402 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/yong`oq.jpg" alt="Rasm 7">
+        <p> Yong‘oq (kg)</p>
+        <div>
+          <strong class="text-start">30 000-35 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">187 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+      <div class="item w-100 h-100 m-auto card border-secondary-subtle border-3" style="border-radius: 5%;"><img
+          src="../images/noxat.jpg" alt="Rasm 8">
+        <p>Nohat (kg)</p>
+        <div>
+          <strong class="text-start">25 000-35 000</strong>
+          <i class="bi bi-eye text-secondary"></i>
+          <b class="text-secondary">354 </b>
+          <button onclick="showHisobot()" class="border-0"><i class="bi bi-bar-chart text-success"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container my-5">
+  <div class="row">
+  <!-- Bodom -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/bodom.png" class="card-img-top m-auto" alt="Bodom">
+      <div class="card-body text-center">
+        <p class="card-title">Bodom (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">35 000–100 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">299</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mayiz -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/mayiz.jpg" class="card-img-top m-auto" alt="Mayiz">
+      <div class="card-body text-center">
+        <p class="card-title">Mayiz (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">20 000–85 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">346</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- O'rik qoqi -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/orik qoqi.jpg" class="card-img-top m-auto" alt="O'rik qoqi">
+      <div class="card-body text-center">
+        <p class="card-title">O'rik qoqi (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">10 000–40 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">354</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- Sho‘rdanak -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/shordanak.jpg" class="card-img-top m-auto" alt="Sho‘rdanak">
+      <div class="card-body text-center">
+        <p class="card-title">Sho‘rdanak (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">25 000–40 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">356</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!-- Yeryong‘oq (qizil) -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/yeryongoq chaqilgani.jpg" class="card-img-top m-auto mt-4" alt="Yeryong‘oq">
+      <div class="card-body text-center">
+        <p class="card-title">Yeryong‘oq (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">20 000–22 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">166</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Yeryong‘oq (katta po‘choqli) -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/yeryongoq.jpg" class="card-img-top m-auto mt-4" alt="Yeryong‘oq">
+      <div class="card-body text-center">
+        <p class="card-title">Yeryong‘oq (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">15 000–17 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">187</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Yong‘oq -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/yong`oq.jpg" class="card-img-top m-auto mt-4" alt="Yong‘oq">
+      <div class="card-body text-center">
+        <p class="card-title">Yong‘oq (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">20 000–40 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">402</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nohat -->
+  <div class="col-6 col-md-3 mb-4 item">
+    <div class="card h-100 border-secondary-subtle border-3" style="border-radius: 5%;">
+      <img src="../images/noxat.jpg" class="card-img-top m-auto mt-4" alt="Nohat">
+      <div class="card-body text-center">
+        <p class="card-title">Nohat (kg)</p>
+      </div>
+      <div class="text-center mb-3">
+        <strong class="text-start">18 000–20 000</strong>
+        <i class="bi bi-eye text-secondary"></i>
+        <b class="text-secondary">402</b>
+        <button onclick="showHisobot()" class="border-0">
+          <i class="bi bi-bar-chart text-success"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+ 
+  </div>
+
+<footer class="text-center text-light p-3" style="background-color: #113448;">
+    <h2>Copyright_©_2025 | Guliston</h2>
+  </footer>
+ 
+
+
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 7,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000, // har 3 sekundda o‘zgaradi
+        autoplaySpeed: 1000,   // o‘tish animatsiyasi 1 sekund davom etadi
+        responsive: {
+          0: { items: 2 },       // telefon
+          576: { items: 4 },     // planshet
+          768: { items: 5 }      // katta ekran
+        },
+        items: 5
+
+      });
+    });
+
+
+
+  </script>
+</body>
+</html>

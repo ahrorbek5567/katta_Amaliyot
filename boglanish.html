@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guliston Dehqon Bozori</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container p-2">
+      <a class="navbar-brand" href="#">Guliston dehqon bozori</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Asosiy</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Mahsulotlar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a target="_blank" class="dropdown-item" href="mevalar.html">Mevalar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="sabzavot.html">Sabzavotlar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="quruq_meva.html">Quruq mevalar</a></li>
+              <li><a target="_blank" class="dropdown-item" href="go'sht.html">Go‘sht</a></li>
+              <li><a target="_blank" class="dropdown-item" href="sut.html">Sut</a></li>
+              <li><a target="_blank" class="dropdown-item" href="#">Kanstovar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Tashkilot haqida
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="boglanish.html">Biz haqimizda</a></li>
+              <li><a class="dropdown-item" href="#">Jamoa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Xizmatlar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Yetkazib berish</a></li>
+              <li><a class="dropdown-item" href="#">Qo‘shimcha xizmatlar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Bog‘lanish</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<br><br><br><br>
+ <div class="container my-5 mt-3">
+    <div class="row">
+      <!-- Bozor ish vaqtlari -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold">Bozor ish vaqtlari</h5>
+        <ul class="list-unstyled">
+          <li>Dushanba: Tozalik kuni</li>
+          <li>Seshanba: 9:00 - 18:00</li>
+          <li>Chorshanba: 9:00 - 18:00</li>
+          <li>Payshanba: 9:00 - 18:00</li>
+          <div style="width: 1px; height: 250px; background: black;float: right; margin-top: -150px;"></div>
+          <li>Juma: 9:00 - 18:00</li>
+          <li>Shanba: 9:00 - 18:00</li>
+          <li>Yakshanba: 9:00 - 18:00</li>
+        </ul>
+      </div>
+
+      <!-- Bog'lanish -->
+      <div class="col-md-4 mb-4 text-center">
+        <h2 class="fw-bold">Bog'lanish</h2>
+        <p>Biz bilan bog'lanish uchun manzillarimizni oling yoki ro'yxatdan o'ting va admin bilan bog'laning.</p>
+        <ul style="list-style: none;">
+          <li><a class="text-decoration-none" href="tel">+99890 058 36 76</a></li>
+          <li><a class="text-decoration-none" href="tel">+99894 492 44 52</a></li>
+          <li><a class="text-decoration-none" href="tel">+99894 493 21 84</a></li>
+        </ul>
+        <div style="width: 1px; height: 250px; background: black;float: right; margin-top: -225px;"></div>
+      </div>
+
+      <!-- Taklif va shikoyatlar uchun -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold">Taklif va shikoyatlar uchun</h5>
+        <form>
+          <div class="mb-2">
+            <input type="text" class="form-control" placeholder="Ismingiz">
+          </div>
+          <div class="mb-2">
+            <input type="text" class="form-control" placeholder="Telefon raqamingiz">
+          </div>
+          <div class="mb-2">
+            <input type="text" class="form-control" placeholder="Mavzu">
+          </div>
+          <div class="mb-2">
+            <input type="file" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Jo'natish</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center">Joylashuv</h1><br>
+
+  <div class="container-fluid">
+    <div class=" map-container rounded-lg shadow-lg overflow-hidden relative w-full pb-[56.25%]">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3034.952804962799!2d68.7797999!3d40.4763091!3m2!1i1024!2i768!4f13.1!2m1!1sguliston%20dehqon%20bozori%20manzili!5e0!3m2!1sen!2s!4v1746811294305!5m2!1sen!2s"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div><br><br>
+
+  <footer class="text-center text-light p-3" style="background-color: #113448;">
+    <h2>Copyright_©_2025 | Guliston</h2>
+  </footer>
+
+
+
+
+
+    
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 7,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000, // har 3 sekundda o‘zgaradi
+        autoplaySpeed: 1000,   // o‘tish animatsiyasi 1 sekund davom etadi
+        responsive: {
+          0: { items: 2 },       // telefon
+          576: { items: 4 },     // planshet
+          768: { items: 5 }      // katta ekran
+        },
+        items: 5
+
+      });
+    });
+
+
+
+  </script>
+</body>
+</html>
